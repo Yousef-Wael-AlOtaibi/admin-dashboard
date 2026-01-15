@@ -11,7 +11,7 @@ body {
     grid-column: 1/2;
     grid-row: 1/-1;
     display: grid;
-    gap: 3rem;
+    gap: 2rem;
     align-content: start;
     background-color: rgb(40, 73, 34);
     padding: 1rem;
@@ -29,7 +29,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
     padding: .5rem;
 }
@@ -39,6 +39,7 @@ nav a {
     grid-template-columns: 4fr 3fr;
     grid-template-rows: 2fr 3fr;
     background-color: rgb(50, 83, 44);
+    padding: 1rem;
 }
 
 .search-container {
@@ -51,7 +52,7 @@ nav a {
 }
 
 input[type='search'] {
-    padding: .5rem;
+    padding: .25rem;
     border-radius: 20px;
     border: none;
     font-size: 1.3rem;
