@@ -34,7 +34,31 @@ nav a {
     padding: .5rem;
 }
 
-.header {
-    grid-column: 2/-1;
+.page-header {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    grid-template-rows: 2fr 3fr;
+    background-color: rgb(50, 83, 44);
+}
+
+.search-container {
+    grid-column: 1/2;
     grid-row: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 9fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+input[type='search'] {
+    padding: .5rem;
+    border-radius: 20px;
+    border: none;
+    font-size: 1.3rem;
+    background-color: rgb(238, 238, 238);
+}
+
+[for='search'] {
+    justify-self: end;
+    color: white;
 }
