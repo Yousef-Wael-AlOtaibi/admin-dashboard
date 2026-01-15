@@ -40,7 +40,9 @@ nav a {
     grid-template-rows: 2fr 3fr;
     background-color: rgb(50, 83, 44);
     padding: 2rem;
+    padding-top: 1rem;
     padding-right: 4rem;
+    column-gap: 2rem;
 }
 
 .search-container {
@@ -89,7 +91,8 @@ input[type='search'] {
     grid-row: 2/3;
     grid-column: 1/2;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto 1fr;
+    column-gap: 2rem;
     color: white;
 }
 
@@ -111,4 +114,20 @@ input[type='search'] {
     grid-row: 2/3;
     font-size: 1.3rem;
     margin: 0;
+}
+
+.action-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: end;
+    gap: 2rem;
+}
+
+.action-btn {
+    padding: .5rem 1rem;
+    background-color: rgb(33, 69, 33);
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    color: white;
 }
