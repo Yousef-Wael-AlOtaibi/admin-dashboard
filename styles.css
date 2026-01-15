@@ -39,7 +39,8 @@ nav a {
     grid-template-columns: 4fr 3fr;
     grid-template-rows: 2fr 3fr;
     background-color: rgb(50, 83, 44);
-    padding: 1rem;
+    padding: 2rem;
+    padding-right: 4rem;
 }
 
 .search-container {
@@ -48,11 +49,10 @@ nav a {
     display: grid;
     grid-template-columns: 1fr 9fr;
     align-items: center;
-    gap: 2rem;
+    gap: .5rem;
 }
 
 input[type='search'] {
-    padding: .25rem;
     border-radius: 20px;
     border: none;
     font-size: 1.3rem;
@@ -60,6 +60,27 @@ input[type='search'] {
 }
 
 [for='search'] {
-    justify-self: end;
     color: white;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    justify-content: end;
+    gap:1.5rem;
+}
+
+.notification-btn {
+    grid-column: 1/2;
+}
+
+.profile-img {
+    grid-column: 2/3;
+}
+
+.profile-container span {
+    color: white;
+    font-weight: bold;
+    grid-column: 3/4;
 }
