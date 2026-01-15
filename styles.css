@@ -10,13 +10,31 @@ body {
 .sidebar {
     grid-column: 1/2;
     grid-row: 1/-1;
+    display: grid;
+    gap: 3rem;
+    align-content: start;
+    background-color: rgb(50, 83, 44);
+    padding: 1rem;
+}
+
+h1 {
+    margin-bottom: 0;
+    color: white;
+}
+
+nav {
+    display: grid;
+    gap: .5rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+    padding: .5rem;
 }
 
 .header {
     grid-column: 2/-1;
     grid-row: 1/2;
-}
-
-* {
-    outline: 1px solid red;
 }
