@@ -17,9 +17,19 @@ body {
     padding: 1rem;
 }
 
+.sidebar svg {
+    fill: white;
+}
+
 h1 {
     margin-bottom: 0;
     color: white;
+    display: grid;
+    grid-template-columns: 3rem auto;
+    margin-top: .5rem;
+    gap: .5rem;
+    align-items: center;
+    font-size: 1.6rem;
 }
 
 nav {
@@ -32,6 +42,9 @@ nav a {
     font-size: 1.2rem;
     color: white;
     padding: .5rem;
+    display: grid;
+    grid-template-columns: 1.5rem  1fr;
+    gap: 1rem;
 }
 
 .page-header {
