@@ -3,7 +3,7 @@ body {
     margin: 0;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: auto 1fr;
     min-height: 100vh;
 }
 
@@ -17,7 +17,7 @@ body {
     padding: 1rem;
 }
 
-.sidebar svg {
+:not(.main-container svg) {
     fill: white;
 }
 
@@ -49,12 +49,10 @@ nav a {
 
 .page-header {
     display: grid;
-    grid-template-columns: 4fr 3fr;
-    grid-template-rows: 2fr 3fr;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: repeat(2, auto);
     background-color: rgb(50, 83, 44);
-    padding: 2rem;
-    padding-top: 1rem;
-    padding-right: 4rem;
+    padding: 1rem 4rem 2rem 2.5rem;
     column-gap: 2rem;
 }
 
@@ -62,9 +60,9 @@ nav a {
     grid-column: 1/2;
     grid-row: 1/2;
     display: grid;
-    grid-template-columns: 1fr 9fr;
+    grid-template-columns: 1.5rem 1fr;
     align-items: center;
-    gap: .5rem;
+    gap: 1rem;
 }
 
 input[type='search'] {
@@ -80,18 +78,19 @@ input[type='search'] {
 
 .profile-container {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: 1.5rem 3rem max-content;
     align-items: center;
-    justify-content: end;
     gap:1.5rem;
+    justify-content: end;
+}
+
+.profile-img-1 {
+    max-width: 100%;
+    border-radius: 50%;
 }
 
 .notification-btn {
     grid-column: 1/2;
-}
-
-.profile-img {
-    grid-column: 2/3;
 }
 
 .profile-container span {
