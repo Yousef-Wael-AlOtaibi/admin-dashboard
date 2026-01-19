@@ -17,7 +17,7 @@ body {
     padding: 1rem;
 }
 
-:not(.main-container svg) {
+svg:not(.main-container svg) {
     fill: white;
 }
 
@@ -192,17 +192,14 @@ h2 {
 }
 
 .project-body {
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .interact-container {
-    display: flex;
-    gap: .5rem;
-}
-
-.interact-btn {
-    background-color: transparent;
-    border: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1.5rem);
+    gap: 1rem;
+    justify-content: end;
 }
 
 .announcements-container {
